@@ -1,0 +1,9 @@
+# Runtime dependencies for the BOCPD CPT segmentation pipeline.
+#
+# Install from the repository root with:
+#   python3 -m pip install -r requirements.txt
+
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8

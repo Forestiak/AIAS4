@@ -1,0 +1,5 @@
+data/*
+results/*
+src/bocpd_cpt/__pycache__/*
+/__pycache__/*
+experiments/__pycache__/*
