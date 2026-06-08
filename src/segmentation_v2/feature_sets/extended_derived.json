@@ -1,0 +1,21 @@
+{
+  "feature_set_id": "extended_derived",
+  "display_name": "Extended Derived",
+  "description": "All raw sensors plus all available derived and Robertson parameters: qt, qn, Rf, Fr, Bq, U2, delta_u2, Qtn, Ic.",
+  "columns": [
+    {"name": "SCPT_RES",  "description": "Cone resistance qc (MPa)", "category": "raw"},
+    {"name": "SCPT_FRES", "description": "Sleeve friction fs (MPa)", "category": "raw"},
+    {"name": "SCPT_PWP2", "description": "Shoulder porewater pressure u2 (MPa)", "category": "raw"},
+    {"name": "SCPT_QT",   "description": "Corrected cone resistance qt (MPa)", "category": "derived"},
+    {"name": "SCPT_QNET", "description": "Net cone resistance qn (MPa)", "category": "derived"},
+    {"name": "SCPT_FRR",  "description": "Friction ratio Rf (%)", "category": "derived"},
+    {"name": "SCPT_NFR",  "description": "Normalised friction ratio Fr (%)", "category": "robertson"},
+    {"name": "SCPT_BQ",   "description": "Pore pressure ratio Bq (-)", "category": "robertson"},
+    {"name": "SCPT_NU2",  "description": "Normalized pore pressure U2 (-)", "category": "robertson"},
+    {"name": "delta_u2",  "description": "Excess penetration pore pressure delta_u2 (MPa)", "category": "derived"},
+    {"name": "SCPT_NQT",  "description": "Normalised cone resistance Qtn (-)", "category": "robertson"},
+    {"name": "SCPT_ICBE", "description": "Soil behaviour type index Ic (-)", "category": "robertson"}
+  ],
+  "segment_stats": ["mean", "std", "median"],
+  "include_thickness": true
+}

@@ -1,0 +1,15 @@
+{
+  "feature_set_id": "robertson_core",
+  "display_name": "Robertson Core",
+  "description": "Raw qc and fs plus the key Robertson parameters used in standard soil typing: Fr, Qtn, Ic, U2.",
+  "columns": [
+    {"name": "SCPT_RES",  "description": "Cone resistance qc (MPa)", "category": "raw"},
+    {"name": "SCPT_FRES", "description": "Sleeve friction fs (MPa)", "category": "raw"},
+    {"name": "SCPT_NFR",  "description": "Normalised friction ratio Fr (%)", "category": "robertson"},
+    {"name": "SCPT_NQT",  "description": "Normalised cone resistance Qtn (-)", "category": "robertson"},
+    {"name": "SCPT_ICBE", "description": "Soil behaviour type index Ic (-)", "category": "robertson"},
+    {"name": "SCPT_NU2",  "description": "Normalized pore pressure U2 (-)", "category": "robertson"}
+  ],
+  "segment_stats": ["mean", "std", "median"],
+  "include_thickness": true
+}

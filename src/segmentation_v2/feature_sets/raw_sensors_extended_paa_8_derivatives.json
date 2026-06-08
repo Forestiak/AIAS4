@@ -1,0 +1,32 @@
+{
+  "feature_set_id": "raw_sensors_extended_paa_8_derivatives",
+  "display_name": "Raw Sensors Extended PAA 8 + Derivatives",
+  "description": "Raw sensors with additional min/max statistics plus friction ratio (Rf) and log(qc) derived features. Backward-compatible with the old use_derived_features=true setting. Compressed CPT segment shape representation. Each selected CPT variable is represented by 8 equal relative-depth bins, with derivatives and thickness.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "representation": {
+    "type": "paa",
+    "bins": 8,
+    "include_derivatives": true
+  },
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ]
+}

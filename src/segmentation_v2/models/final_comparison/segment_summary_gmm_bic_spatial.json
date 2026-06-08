@@ -1,0 +1,24 @@
+{
+  "model_id": "segment_summary_gmm_bic_spatial",
+  "display_name": "Segment Summary GMM BIC + Spatial MRF",
+  "model_type": "gmm",
+  "pipeline_type": "segment",
+  "feature_set_id": "fc_summary_core",
+  "boundary_source": "bocpd_estimate",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 4,
+    "max_clusters": 12,
+    "random_state": 42,
+    "covariance_type": "diag",
+    "reg_covar": 1e-06
+  },
+  "min_segment_thickness_m": 0.25,
+  "use_spatial_mrf": true,
+  "location_file": "Input_Location_clean.csv",
+  "spatial_parameters": {
+    "lambda": 1.0,
+    "max_distance_m": 5000.0,
+    "sigma_m": 2000.0
+  }
+}

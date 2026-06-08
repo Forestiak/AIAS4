@@ -1,0 +1,13 @@
+{
+  "model_id": "gmm_k15_diag_thin",
+  "model_type": "gmm",
+  "display_name": "GMM k15 Diag Thin=0.3m",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 15,
+    "random_state": 42,
+    "covariance_type": "diag"
+  },
+  "feature_set_id": "raw_sensors_extended",
+  "min_segment_thickness_m": 0.3
+}

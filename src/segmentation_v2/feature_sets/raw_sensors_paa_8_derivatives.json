@@ -1,0 +1,28 @@
+{
+  "feature_set_id": "raw_sensors_paa_8_derivatives",
+  "display_name": "Raw Sensors PAA 8 + Derivatives",
+  "description": "The three primary CPT sensor channels only. Compressed CPT segment shape representation. Each selected CPT variable is represented by 8 equal relative-depth bins, with derivatives and thickness.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "representation": {
+    "type": "paa",
+    "bins": 8,
+    "include_derivatives": true
+  },
+  "include_thickness": true
+}

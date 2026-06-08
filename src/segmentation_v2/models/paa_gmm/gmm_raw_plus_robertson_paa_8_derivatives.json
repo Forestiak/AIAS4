@@ -1,0 +1,14 @@
+{
+  "model_id": "gmm_raw_plus_robertson_paa_8_derivatives",
+  "model_type": "gmm",
+  "display_name": "GMM Raw + Robertson PAA 8 + Derivatives",
+  "feature_set_id": "raw_plus_robertson_paa_8_derivatives",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 12,
+    "covariance_type": "full",
+    "random_state": 42
+  },
+  "boundary_source": "ground_truth",
+  "use_spatial_mrf": false
+}

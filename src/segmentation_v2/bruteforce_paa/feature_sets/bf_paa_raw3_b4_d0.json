@@ -1,0 +1,28 @@
+{
+  "feature_set_id": "bf_paa_raw3_b4_d0",
+  "display_name": "bf_paa_raw3_b4_d0",
+  "description": "Brute-force paa experiment for raw3.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "representation": {
+    "type": "paa",
+    "bins": 4,
+    "include_derivatives": false
+  },
+  "include_thickness": true
+}

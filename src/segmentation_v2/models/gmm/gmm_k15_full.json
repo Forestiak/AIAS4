@@ -1,0 +1,13 @@
+{
+  "model_id": "gmm_k15_full",
+  "model_type": "gmm",
+  "display_name": "GMM k15 Full Cov",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 15,
+    "random_state": 42,
+    "covariance_type": "full"
+  },
+  "feature_set_id": "raw_sensors",
+  "min_segment_thickness_m": 0.5
+}

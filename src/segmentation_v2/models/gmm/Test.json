@@ -1,0 +1,12 @@
+{
+  "model_id": "Test",
+  "model_type": "gmm",
+  "display_name": "Test",
+  "feature_set_id": "raw_sensors",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 20,
+    "random_state": 42
+  },
+  "min_segment_thickness_m": 0.5
+}

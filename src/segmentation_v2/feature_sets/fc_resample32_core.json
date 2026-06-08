@@ -1,0 +1,47 @@
+{
+  "feature_set_id": "fc_resample32_core",
+  "display_name": "FC Resample-32 Core",
+  "description": "32-point interpolated segment shape representation. Higher-resolution time-series shape test.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Porewater pressure u2",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic",
+      "category": "robertson"
+    }
+  ],
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ],
+  "representation": {
+    "type": "resample",
+    "length": 32,
+    "include_derivatives": false
+  }
+}

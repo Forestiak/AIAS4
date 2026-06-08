@@ -1,0 +1,54 @@
+{
+  "feature_set_id": "raw_sensors_extended_fft",
+  "display_name": "Raw Sensors Extended FFT",
+  "description": "FFT spectral representation for raw_sensors_extended columns.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ],
+  "representation": {
+    "type": "fft",
+    "depth_step_m": 0.02,
+    "min_points_per_segment": 8,
+    "min_frequency_cycles_per_m": 0.25,
+    "max_frequency_cycles_per_m": 8.0,
+    "bands_cycles_per_m": [
+      [
+        0.25,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        4.0
+      ],
+      [
+        4.0,
+        8.0
+      ]
+    ],
+    "detrend": true,
+    "window": "hann"
+  }
+}

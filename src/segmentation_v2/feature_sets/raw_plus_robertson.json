@@ -1,0 +1,16 @@
+{
+  "feature_set_id": "raw_plus_robertson",
+  "display_name": "Raw + Robertson",
+  "description": "Raw CPT sensors plus the four key normalised Robertson classification parameters (Fr, Qtn, Ic, U2).",
+  "columns": [
+    {"name": "SCPT_RES",  "description": "Cone resistance qc (MPa)", "category": "raw"},
+    {"name": "SCPT_FRES", "description": "Sleeve friction fs (MPa)", "category": "raw"},
+    {"name": "SCPT_PWP2", "description": "Shoulder porewater pressure u2 (MPa)", "category": "raw"},
+    {"name": "SCPT_NFR",  "description": "Normalised friction ratio Fr (%)", "category": "robertson"},
+    {"name": "SCPT_NQT",  "description": "Normalised cone resistance Qtn (-)", "category": "robertson"},
+    {"name": "SCPT_ICBE", "description": "Soil behaviour type index Ic (-)", "category": "robertson"},
+    {"name": "SCPT_NU2",  "description": "Normalized pore pressure U2 (-)", "category": "robertson"}
+  ],
+  "segment_stats": ["mean", "std", "median"],
+  "include_thickness": true
+}

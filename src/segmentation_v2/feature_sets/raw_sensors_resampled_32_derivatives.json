@@ -1,0 +1,28 @@
+{
+  "feature_set_id": "raw_sensors_resampled_32_derivatives",
+  "display_name": "Raw Sensors Resampled Shape 32 + Derivatives",
+  "description": "The three primary CPT sensor channels only. Shape-preserving CPT segment representation. Each selected CPT variable is interpolated to 32 relative-depth points per segment, with first derivatives and thickness.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "representation": {
+    "type": "resample",
+    "length": 32,
+    "include_derivatives": true
+  },
+  "include_thickness": true
+}

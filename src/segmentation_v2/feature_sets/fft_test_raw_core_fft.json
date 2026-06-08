@@ -1,0 +1,38 @@
+{
+  "feature_set_id": "fft_test_raw_core_fft",
+  "display_name": "FFT Test Raw Core",
+  "description": "FFT-first representation on the 3 core raw CPT sensors. No resample/PAA bins.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "include_thickness": true,
+  "representation": {
+    "type": "fft",
+    "depth_step_m": 0.02,
+    "min_points_per_segment": 8,
+    "min_frequency_cycles_per_m": 0.25,
+    "max_frequency_cycles_per_m": 8.0,
+    "bands_cycles_per_m": [
+      [0.25, 1.0],
+      [1.0, 2.0],
+      [2.0, 4.0],
+      [4.0, 8.0]
+    ],
+    "detrend": true,
+    "window": "hann"
+  }
+}

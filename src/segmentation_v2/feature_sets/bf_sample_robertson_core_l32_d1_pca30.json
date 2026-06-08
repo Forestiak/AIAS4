@@ -1,0 +1,38 @@
+{
+  "feature_set_id": "bf_sample_robertson_core_l32_d1_pca30",
+  "display_name": "bf_sample_robertson_core_l32_d1_pca30",
+  "description": "Brute-force resample experiment for robertson_core.",
+  "columns": [
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr (%)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_BQ",
+      "description": "Pore pressure ratio Bq (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NU2",
+      "description": "Normalized pore pressure U2 (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic (-)",
+      "category": "robertson"
+    }
+  ],
+  "representation": {
+    "type": "resample",
+    "length": 32,
+    "include_derivatives": true
+  },
+  "include_thickness": true
+}

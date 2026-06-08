@@ -1,0 +1,13 @@
+{
+  "feature_set_id": "raw_sensors_extended",
+  "display_name": "Raw Sensors Extended",
+  "description": "Raw sensors with additional min/max statistics plus friction ratio (Rf) and log(qc) derived features. Backward-compatible with the old use_derived_features=true setting.",
+  "columns": [
+    {"name": "SCPT_RES",  "description": "Cone resistance qc (MPa)", "category": "raw"},
+    {"name": "SCPT_FRES", "description": "Sleeve friction fs (MPa)", "category": "raw"},
+    {"name": "SCPT_PWP2", "description": "Shoulder porewater pressure u2 (MPa)", "category": "raw"}
+  ],
+  "segment_stats": ["mean", "std", "median", "min", "max"],
+  "include_thickness": true,
+  "extra_derived": ["Rf", "log_qc"]
+}

@@ -1,0 +1,52 @@
+{
+  "feature_set_id": "fc_summary_core",
+  "display_name": "FC Summary Core",
+  "description": "Segment-level statistical baseline using CPT core and Robertson features.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Porewater pressure u2",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic",
+      "category": "robertson"
+    }
+  ],
+  "segment_stats": [
+    "mean",
+    "std",
+    "median",
+    "min",
+    "max"
+  ],
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ],
+  "representation": {
+    "type": "summary"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "gmm_extended_derived_resampled_32_derivatives",
+  "model_type": "gmm",
+  "display_name": "GMM Extended Derived Resampled Shape 32 + Derivatives",
+  "feature_set_id": "extended_derived_resampled_32_derivatives",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 12,
+    "covariance_type": "full",
+    "random_state": 42
+  },
+  "boundary_source": "ground_truth",
+  "use_spatial_mrf": false
+}

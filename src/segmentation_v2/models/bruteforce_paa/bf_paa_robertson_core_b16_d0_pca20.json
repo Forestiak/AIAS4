@@ -1,0 +1,16 @@
+{
+  "model_id": "bf_paa_robertson_core_b16_d0_pca20",
+  "model_type": "gmm",
+  "display_name": "bf_paa_robertson_core_b16_d0_pca20",
+  "feature_set_id": "bf_paa_robertson_core_b16_d0_pca20",
+  "parameters": {
+    "cluster_selection": "fixed",
+    "n_clusters": 20,
+    "covariance_type": "diag",
+    "random_state": 42,
+    "reg_covar": 1e-06,
+    "pca_n_components": 20
+  },
+  "boundary_source": "ground_truth",
+  "use_spatial_mrf": false
+}

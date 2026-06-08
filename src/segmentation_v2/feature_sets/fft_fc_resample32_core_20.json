@@ -1,0 +1,69 @@
+{
+  "feature_set_id": "fft_fc_resample32_core_20",
+  "display_name": "FC Resample-32 Core FFT 20",
+  "description": "32-point interpolated segment shape representation. Higher-resolution time-series shape test. FFT-first representation for final comparison (20-cluster search).",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Porewater pressure u2",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic",
+      "category": "robertson"
+    }
+  ],
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ],
+  "representation": {
+    "type": "fft",
+    "depth_step_m": 0.02,
+    "min_points_per_segment": 8,
+    "min_frequency_cycles_per_m": 0.25,
+    "max_frequency_cycles_per_m": 8.0,
+    "bands_cycles_per_m": [
+      [
+        0.25,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        4.0
+      ],
+      [
+        4.0,
+        8.0
+      ]
+    ],
+    "detrend": true,
+    "window": "hann"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model_id": "segment_resample32_gmm_bic_pca_20_fft",
+  "display_name": "Segment Resample-32 GMM BIC PCA (20 clusters) + FFT",
+  "model_type": "gmm",
+  "pipeline_type": "segment",
+  "feature_set_id": "fft_fc_resample32_core_20",
+  "boundary_source": "bocpd_estimate",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 4,
+    "max_clusters": 20,
+    "random_state": 42,
+    "covariance_type": "diag",
+    "reg_covar": 1e-06
+  },
+  "min_segment_thickness_m": 0.25,
+  "use_spatial_mrf": false,
+  "location_file": "Input_Location_clean.csv",
+  "model_folder": "fft_final_comaprison_20"
+}

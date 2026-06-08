@@ -1,0 +1,13 @@
+{
+  "model_id": "gmm_k20_diag_derived_",
+  "model_type": "gmm",
+  "display_name": "GMM k20 Diag + Derived",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 20,
+    "random_state": 42,
+    "covariance_type": "diag"
+  },
+  "feature_set_id": "raw_sensors_extended",
+  "min_segment_thickness_m": 0.5
+}

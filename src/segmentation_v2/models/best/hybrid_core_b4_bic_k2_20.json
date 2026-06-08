@@ -1,0 +1,16 @@
+{
+  "model_id": "hybrid_core_b4_bic_k2_20",
+  "model_type": "gmm",
+  "display_name": "Hybrid Core PAA b4 - BIC k2-20 (diag)",
+  "feature_set_id": "bf_paa_hybrid_core_b4_d0",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 2,
+    "max_clusters": 20,
+    "covariance_type": "diag",
+    "random_state": 42,
+    "reg_covar": 1e-06
+  },
+  "boundary_source": "ground_truth",
+  "use_spatial_mrf": false
+}

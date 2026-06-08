@@ -1,0 +1,28 @@
+{
+  "feature_set_id": "bf_sample_raw3_l16_d1_pca20",
+  "display_name": "bf_sample_raw3_l16_d1_pca20",
+  "description": "Brute-force resample experiment for raw3.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    }
+  ],
+  "representation": {
+    "type": "resample",
+    "length": 16,
+    "include_derivatives": true
+  },
+  "include_thickness": true
+}

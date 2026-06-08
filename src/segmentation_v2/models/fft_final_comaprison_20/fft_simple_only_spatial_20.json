@@ -1,0 +1,24 @@
+{
+  "model_type": "gmm",
+  "pipeline_type": "segment",
+  "feature_set_id": "fft_fc_summary_core_20",
+  "boundary_source": "bocpd_estimate",
+  "min_segment_thickness_m": 0.25,
+  "location_file": "Input_Location_clean.csv",
+  "model_folder": "fft_final_comaprison_20",
+  "model_id": "fft_simple_only_spatial_20",
+  "display_name": "FFT Simple Only 20 + Spatial",
+  "use_spatial_mrf": true,
+  "spatial_parameters": {
+    "lambda": 1.0,
+    "max_distance_m": 5000.0,
+    "sigma_m": 2000.0
+  },
+  "parameters": {
+    "cluster_selection": "fixed",
+    "n_clusters": 10,
+    "random_state": 42,
+    "covariance_type": "diag",
+    "reg_covar": 1e-06
+  }
+}

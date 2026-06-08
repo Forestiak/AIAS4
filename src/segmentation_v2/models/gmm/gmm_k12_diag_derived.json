@@ -1,0 +1,13 @@
+{
+  "model_id": "gmm_k12_diag_derived",
+  "model_type": "gmm",
+  "display_name": "GMM k12 Diag + Derived",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 12,
+    "random_state": 42,
+    "covariance_type": "diag"
+  },
+  "feature_set_id": "raw_sensors_extended",
+  "min_segment_thickness_m": 0.5
+}

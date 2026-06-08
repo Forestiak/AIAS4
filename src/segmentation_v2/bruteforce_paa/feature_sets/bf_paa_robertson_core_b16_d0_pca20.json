@@ -1,0 +1,38 @@
+{
+  "feature_set_id": "bf_paa_robertson_core_b16_d0_pca20",
+  "display_name": "bf_paa_robertson_core_b16_d0_pca20",
+  "description": "Brute-force paa experiment for robertson_core.",
+  "columns": [
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr (%)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_BQ",
+      "description": "Pore pressure ratio Bq (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NU2",
+      "description": "Normalized pore pressure U2 (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic (-)",
+      "category": "robertson"
+    }
+  ],
+  "representation": {
+    "type": "paa",
+    "bins": 16,
+    "include_derivatives": false
+  },
+  "include_thickness": true
+}

@@ -1,0 +1,60 @@
+{
+  "feature_set_id": "fc_hybrid24_core",
+  "display_name": "FC Hybrid-24 Core",
+  "description": "Full hybrid experimental representation. Included for comparison, not expected to be the strongest model.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Porewater pressure u2",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic",
+      "category": "robertson"
+    }
+  ],
+  "segment_stats": [
+    "mean",
+    "std",
+    "median",
+    "min",
+    "max"
+  ],
+  "include_thickness": true,
+  "extra_derived": [
+    "Rf",
+    "log_qc"
+  ],
+  "representation": {
+    "type": "hybrid",
+    "length": 24,
+    "include_derivatives": true,
+    "include_shape": true,
+    "include_derivative_shape": true,
+    "include_distribution": true,
+    "include_engineered": true,
+    "include_geometry": true,
+    "include_coordinates": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "feature_set_id": "bf_sample_hybrid_core_l32_d0_pca20",
+  "display_name": "bf_sample_hybrid_core_l32_d0_pca20",
+  "description": "Brute-force resample experiment for hybrid_core.",
+  "columns": [
+    {
+      "name": "SCPT_RES",
+      "description": "Cone resistance qc (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_FRES",
+      "description": "Sleeve friction fs (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_PWP2",
+      "description": "Shoulder porewater pressure u2 (MPa)",
+      "category": "raw"
+    },
+    {
+      "name": "SCPT_NQT",
+      "description": "Normalised cone resistance Qtn (-)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_NFR",
+      "description": "Normalised friction ratio Fr (%)",
+      "category": "robertson"
+    },
+    {
+      "name": "SCPT_ICBE",
+      "description": "Soil behaviour type index Ic (-)",
+      "category": "robertson"
+    }
+  ],
+  "representation": {
+    "type": "resample",
+    "length": 32,
+    "include_derivatives": false
+  },
+  "include_thickness": true
+}

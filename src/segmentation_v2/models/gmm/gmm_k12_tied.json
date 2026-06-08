@@ -1,0 +1,13 @@
+{
+  "model_id": "gmm_k12_tied",
+  "model_type": "gmm",
+  "display_name": "GMM k12 Tied Cov",
+  "parameters": {
+    "min_clusters": 2,
+    "max_clusters": 12,
+    "random_state": 42,
+    "covariance_type": "tied"
+  },
+  "feature_set_id": "raw_sensors",
+  "min_segment_thickness_m": 0.5
+}

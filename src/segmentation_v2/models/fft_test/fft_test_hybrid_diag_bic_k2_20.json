@@ -1,0 +1,18 @@
+{
+  "model_id": "fft_test_hybrid_diag_bic_k2_20",
+  "model_type": "gmm",
+  "display_name": "FFT Test Hybrid - BIC k2-20 (diag)",
+  "feature_set_id": "fft_test_hybrid_core_fft",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 2,
+    "max_clusters": 20,
+    "covariance_type": "diag",
+    "random_state": 42,
+    "reg_covar": 1e-06
+  },
+  "boundary_source": "ground_truth",
+  "use_spatial_mrf": false,
+  "min_segment_thickness_m": 0.5,
+  "model_folder": "fft_test"
+}

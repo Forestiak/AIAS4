@@ -1,0 +1,12 @@
+{
+  "feature_set_id": "raw_sensors",
+  "display_name": "Raw Sensors",
+  "description": "The three primary CPT sensor channels only.",
+  "columns": [
+    {"name": "SCPT_RES",  "description": "Cone resistance qc (MPa)", "category": "raw"},
+    {"name": "SCPT_FRES", "description": "Sleeve friction fs (MPa)", "category": "raw"},
+    {"name": "SCPT_PWP2", "description": "Shoulder porewater pressure u2 (MPa)", "category": "raw"}
+  ],
+  "segment_stats": ["mean", "std", "median"],
+  "include_thickness": true
+}

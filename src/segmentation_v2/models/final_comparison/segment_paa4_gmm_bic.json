@@ -1,0 +1,19 @@
+{
+  "model_id": "segment_paa4_gmm_bic",
+  "display_name": "Segment PAA-4 GMM BIC",
+  "model_type": "gmm",
+  "pipeline_type": "segment",
+  "feature_set_id": "fc_paa4_core",
+  "boundary_source": "bocpd_estimate",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 4,
+    "max_clusters": 12,
+    "random_state": 42,
+    "covariance_type": "diag",
+    "reg_covar": 1e-06
+  },
+  "min_segment_thickness_m": 0.25,
+  "use_spatial_mrf": false,
+  "location_file": "Input_Location_clean.csv"
+}

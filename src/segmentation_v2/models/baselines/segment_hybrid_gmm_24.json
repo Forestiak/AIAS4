@@ -1,0 +1,20 @@
+{
+  "model_id": "segment_hybrid_gmm_24",
+  "display_name": "Segment Hybrid GMM 24",
+  "model_type": "gmm",
+  "pipeline_type": "segment",
+  "feature_set_id": "segment_hybrid_cpt_24",
+  "boundary_source": "bocpd_estimate",
+  "parameters": {
+    "cluster_selection": "bic",
+    "min_clusters": 4,
+    "max_clusters": 12,
+    "random_state": 42,
+    "covariance_type": "diag",
+    "reg_covar": 0.000001,
+    "pca_n_components": 16
+  },
+  "min_segment_thickness_m": 0.25,
+  "use_spatial_mrf": false,
+  "location_file": "Input_Location_clean.csv"
+}
